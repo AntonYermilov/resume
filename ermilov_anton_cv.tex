@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Anton Ermilov
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+            
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\simpleHeading}[2]{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\simpleItemHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\large #1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\descItemHeading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\large #1} & #2 \\
+      #3 & \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Anton Ermilov} & \Letter~ \href{mailto:anton.yermilov@gmail.com}{anton.yermilov@gmail.com}\\
+  & \faLinkedinSquare~ \href{https://www.linkedin.com/in/antonermilov/}{linkedin.com/in/antonermilov} \\
+\end{tabular*}
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \begin{itemize}[leftmargin=*]
+    \descItemHeading
+      {\href{https://spb.hse.ru/en/}{\textbf{Higher School of Economics}}, MSc in Informatics}{Sep 2020 -- Present}
+      {Major in Machine Learning}
+    \descItemHeading
+      {\href{https://spb.hse.ru/en/}{\textbf{Higher School of Economics}}, BSc in Applied Mathematics}{Sep 2016 -- June 2020}
+      {Graduated with distinction, GPA: 9.4/10}
+  \end{itemize}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \begin{itemize}[leftmargin=*]
+    \descItemHeading
+      {\textbf{Software Engineer at \href{https://cloud.yandex.com/en/about}{Yandex.Cloud}}}{Oct 2019 - Present}
+      {Working in ML \& AI team on SpeechKit project. My responsibilities:}
+      \begin{itemize}
+          \item Developing and maintaining ASR backend (all components of STT server, STT proxies)
+          \item Implementing, training and improving quality of ASR models (both streaming and transcription)
+          \item Researching new approaches to ASR (multilingual recognition, better real-time recognition)
+          \item Preparing and maintaining crowdsourcing projects on the Toloka platform 
+          \item Developing tools for automation and simplification of many work processes
+      \end{itemize}\vspace{-5pt}
+      \textit{Skills}: \textbf{C++, Python, PyTorch, Go, SQL}
+     
+    \vspace{-5pt}
+     
+    \simpleItemHeading
+      {\textbf{Data Scientist \& Software Engineer at \href{https://soteranalytics.com/about-us}{Soter Analytics}}}{May 2018 - Sep 2019}
+      \begin{itemize}
+          \item Implemented an algorithm that detects dangerous movements via analysing data from wearable device sensors’ and predicts a risk of back injuries for manual handling workers
+          \item Built a model for clustering workers by type of their activity basing on the data retrieved from devices
+          \item Developed a hub to download data from company’s devices via BLE and upload it to the remote server
+      \end{itemize}\vspace{-5pt}
+      \textit{Skills}: \textbf{C, Python, SQL}
+
+    % \simpleHeading
+    %   {\textbf{Junior Researcher at \href{https://old.research.jetbrains.org}{JetBrains Research}}}{Sep 2018 - May 2019}
+    % %   {Worked in Machine Learning and Information Management Lab on research projects.}
+    %   \begin{itemize}
+    %       \item Article Writing Assistant
+    %       \item Factorized Multiclass Boosting
+    %   \end{itemize}
+
+  \end{itemize}
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \begin{itemize}[leftmargin=*]
+    \simpleItemHeading{\href{https://spb.hse.ru/en/ba/appmath/students/diplomas/368409397}{\textbf{Collecting parallel corpus for Grammar Error Correction (BSc thesis)}}}{\textbf{Python}}
+    
+    Explored the unsupervised method of collecting and annotating parallel corpus for GEC task based on extracting user edits from the editing history of scientific articles.
+    
+    \vspace{-5pt}
+  
+    \simpleItemHeading{\href{https://arxiv.org/abs/1909.04904}{\textbf{Factorized MultiClass Boosting}}}{\textbf{Java, Python}}
+    
+    Worked on the implementation of a new \href{https://github.com/spbsu-ml-community/jmll/blob/master/experiments/src/main/java/com/expleague/fmcb/FMCBoostingMain.java}{gradient boosting approach} to the multiclass classification problem, as well as on the implementation of the \href{https://github.com/rebryk/mcc-benchmark}{benchmark} to compare our approach with other popular solutions.
+    
+    \vspace{-5pt}
+    
+    \simpleItemHeading{\href{https://github.com/AntonYermilov/article-writing-assistant/}{\textbf{Article Writing Assistant}}}{\textbf{Python, PyTorch}}
+    
+    Worked on the implementation of an assistant for finding and correcting domain-specific terms and phrases when writing articles for scientific conferences.
+    
+    \vspace{-5pt}
+    
+    \simpleItemHeading{\href{https://github.com/AntonYermilov/pun-detection-and-generation}{\textbf{Humor Detection in Russian}}}{\textbf{C++, Python}}
+    
+    Investigated the problem of humor detection in Russian language. Worked on collecting data, as well as on building classifiers for this task.
+    
+    \vspace{-5pt}
+    
+    \simpleItemHeading{\href{https://github.com/AntonYermilov/Nonogram-Android}{\textbf{Nonograms}}}{\textbf{Android, C++, Python, SQL}}
+    
+    Developed an Android app for solving, creating and sharing nonograms (Japanese crosswords). Also worked on converting images from the gallery to nonograms.
+  \end{itemize}
+
+\section{Publications}
+  \begin{itemize}[leftmargin=*]
+    \simpleItemHeading{\href{https://link.springer.com/chapter/10.1007/978-3-030-01204-5_17}{\textbf{Stierlitz Meets SVM: Humor Detection in Russian}}}{}
+    
+    \textit{A.Ermilov, N. Murashkina, V. Goryacheva, P. Braslavski}\\
+    Conference on Artificial Intelligence and Natural Language, 2018 - Springer
+    
+  \end{itemize}
+
+\section{Achievements}
+  \begin{itemize}[leftmargin=*]
+      \descItemHeading{\href{https://icpc.global/regionals/finder/world-finals-2019/standings}{\textbf{ICPC World Finals 2019}}}{Apr 2019}
+      {66th place out of 131 teams}
+  \end{itemize}
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
